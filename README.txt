@@ -16,3 +16,8 @@ INSTALL
 
 1. install enb for GTA SA.
 2. put the files inside enbseries.
+
+NOTIC
+
+If you just cover up the original enblighting.fx file, the effect, such as shadow and lighting inside the file, will disappear, too.
+So you have to mix the two shaders by yourself.

@@ -24,13 +24,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
 INSTALL
 ---------------------------------
 
-1. install enb for GTA SA frome http://enbdev.com/mod_gtasa_v0430.htm.
+1. install enb for GTA SA from http://enbdev.com/mod_gtasa_v0430.htm.
 2. unpack d3d9.dll, enblocal.ini, enbseries.ini, and enbseries folder in the WrapperVersion.
 3. put the files fo CloudWorks (png, fx, and ini) inside enbseries folder.
 4. open the game and wait for compiling.
-5. you get a sky with cloud!
+5. you get a sky with clouds!
 
-note : you need to tweak the UseOriginalPostProcessing and UseOriginalColorCorrection to get a better look.
+note: you need to tweak the UseOriginalPostProcessing and UseOriginalColorCorrection to get a better look.
 
 NOTICE
 ---------------------------------

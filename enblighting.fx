@@ -198,6 +198,7 @@ float3 CTC_CN <string UIName="Cloud Bright Color Cloudy Night";string UIWidget="
 
 float grow_h <string UIName="fatnessH";string UIWidget="Spinner";> = { 1.0 };
 float softness_h <string UIName="softnessH";string UIWidget="Spinner";> = { 40.0 };
+float scatteringStrength_h <string UIName="ScatteringStrength_h";string UIWidget="Spinner";> = { 0.0 };
 float H_scaleA <string UIName="HscaleA";string UIWidget="Spinner";> = { 40.0 };
 float H_scaleB <string UIName="HscaleB";string UIWidget="Spinner";> = { 40.0 };
 float curvy_scale_h <string UIName="curvy_scale_h";string UIWidget="Spinner";> = { 2.5 };
@@ -466,7 +467,7 @@ float4 Cloud_high(const in float3 cam_dir, const in float3 cam_pos, const in flo
 			c_dark = lerp(lerp(lerp(CBC_CN, CBC_CD, noon_index), lerp(CBC_N, CBC_D, noon_index), sunny), CBC_S, sunset_index),
 			c_bright = lerp(lerp(lerp(CTC_CN, CTC_CD, noon_index), lerp(CTC_N, CTC_D, noon_index), sunny), CTC_S, sunset_index);
         
-        c_bright += normalize(c_bright) * scatteringStrength * exp((suncross - 1.0) / scattering / 1.5) * 4.0;
+        c_bright += normalize(c_bright) * scatteringStrength_h * exp((suncross - 1.0) / scattering / 1.5);
 
         float3 C = float4(0.0, 0.0, 0.0, 0.0),
 			flowA = -time * H_nA_move,
@@ -486,17 +487,17 @@ float4 Cloud_high(const in float3 cam_dir, const in float3 cam_pos, const in flo
     return float4(0.0, 0.0, 0.0, 0.0);
 }
 
-//It seems that sometimes the weather just suddenly changes, maybe I'll fix it someday.
+//maybe fixed?
 float SunnyFactor()
 {
     float4 c, w = WeatherAndTime;
     
-    if (w.x == 0 || w.x == 1 || w.x == 2 || w.x == 6 || w.x == 11 || w.x == 13 || w.x == 17)
+    if (w.x <= 3 || w.x == 6 || w.x == 11 || w.x == 13 || w.x == 14 || w.x == 15 || w.x == 17)
         c.x = 1.0;
     else
         c.x = 0.0;
     
-    if (w.y == 0 || w.x == 1 || w.x == 2 || w.x == 6 || w.x == 11 || w.x == 13 || w.x == 17)
+    if (w.x <= 3 || w.x == 6 || w.x == 11 || w.x == 13 || w.x == 14 || w.x == 15 || w.x == 17)
         c.y = 1.0;
     else
         c.y = 0.0;

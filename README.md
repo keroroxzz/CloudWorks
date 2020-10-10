@@ -3,25 +3,27 @@ GTA SA CloudWorks Alpha (3.6.5)
 
 by Brian Tu (keroroxzz)
 
-Contact : https://github.com/keroroxzz
+Contact: https://github.com/keroroxzz
+Or: https://fumincha.wordpress.com/cloudworks/
 
 2020/09/01
 
-[![Video](https://img.youtube.com/vi/cPkl2mAcvCo/0.jpg)](https://www.youtube.com/watch?v=cPkl2mAcvCo)
+[![Video](https://img.youtube.com/vi/AjRBydjolfM/0.jpg)](https://www.youtube.com/watch?v=AjRBydjolfM)
 
 ---------------------------------
 
 This is the alpha version of the CloudWorks.
-Atmosphere and weather still need to be improved.
+The atmosphere and weather still need to be improved.
 
 Requirement
 ---------------------------------
 
-GTX 1660s or better graphic card is needed to run this stuff at 1080p.
+GTX 1660s or better is needed to run this stuff at 1080p.
 
 License
 ---------------------------------
 Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+Remember to include these information if you'd like to re-distribute stuff with this shader.
 
 INSTALL
 ---------------------------------
@@ -37,5 +39,10 @@ note: you need to tweak the UseOriginalPostProcessing and UseOriginalColorCorrec
 NOTICE
 ---------------------------------
 
+Method 1 (need coding)
 If you just cover up the original enblighting.fx file, the effect, such as shadow and lighting inside the file, will disappear, too.
 So you have to mix the two shaders by yourself.
+
+Method 2 (no need for coding)
+Make the shader works under enbeffectprepass by renaming the files and the tag inside the ini.
+But the particle fusion will fail if using this method.

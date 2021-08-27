@@ -33,3 +33,4 @@ INSTALL
 1. Install ASL loader for your GTA SA.
 2. Install RenderHook (rh2020_1_2_a).
 3. Drag and drop these files into shader folder and replace some of them.
+4. You need right timecyc.dat to control the weather, you can use the one in Serendipity1.0 (https://www.patreon.com/posts/serendipity-1-0-54167579)

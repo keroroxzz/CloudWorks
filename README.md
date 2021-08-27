@@ -22,9 +22,9 @@ GTX 1660s or better is needed to run this stuff at 1080p.
 
 License
 ---------------------------------
-Creative Commons Attribution-NonCommercial 3.0 Unported License
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported.
 
-Remember to include these information if you'd like to re-distribute stuff with this shader.
+Remember to include the information above (include this) if you'd like to re-distribute stuff with this shader.
 
 
 INSTALL

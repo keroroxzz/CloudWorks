@@ -13,6 +13,7 @@ me, most of the sky calculations are replaced by the new one.
 License :　Creative Commons　Attribution-NonCommercial-ShareAlike 3.0 Unported
 ===================================================================================*/
 
+#include "CW_Globals.hlsl"
 #include "NoiseGenerator.hlsli"
 
 float3 pow3(float3 v, float n)

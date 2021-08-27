@@ -10,6 +10,8 @@ https://github.com/keroroxzz
 License :　Creative Commons　Attribution-NonCommercial-ShareAlike 3.0 Unported
 ===================================================================================*/
 
+#include "CW_Globals.hlsl"
+
 #ifndef NOISE_GEN
 #define NOISE_GEN
 

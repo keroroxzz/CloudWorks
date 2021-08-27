@@ -13,6 +13,7 @@ I'd like to make the codes looks neat in the future.
 License :　Creative Commons　Attribution-NonCommercial-ShareAlike 3.0 Unported
 ===================================================================================*/
 
+#include "CW_Globals.hlsl"
 #include "NoiseGenerator.hlsli"
 
 //=================Time flow========================

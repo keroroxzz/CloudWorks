@@ -9,9 +9,10 @@ Credit :
 	RenderHook by PetkaGTA
 ===================================================================================*/
 
-#include "GBuffer.hlsl"
 #include "GameMath.hlsl"
+#include "CW_Globals.hlsl"
 #include "CW_AtmosphericScatteringFunctions.hlsli"
+
 #ifndef ATMOPHERIC_SCATTERING
 #define ATMOPHERIC_SCATTERING
 
